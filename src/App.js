@@ -392,7 +392,7 @@ export default function App() {
               <StatBadge label="Total Volume (all junctions)" value="18,370 veh/hr" color={T.blue} bg={T.lightBlue} />
               <StatBadge label="Average Network Speed" value="29 km/h" color={T.teal} bg={T.lightTeal} />
               <StatBadge label="Peak Delay (Kurla West)" value="34 minutes" color={T.red} bg={T.lightRed} />
-              <StatBadge label="Model Accuracy" value="Approx. 92–Approx. 92–94%" color={T.orange} bg={T.lightOrange} />
+              <StatBadge label="Model Accuracy" value="Approx. 92–94%" color={T.orange} bg={T.lightOrange} />
             </div>
 
             {/* Hourly trend */}
@@ -532,7 +532,7 @@ export default function App() {
                   <div style={{ fontSize:10, color:"#93C5FD" }}>Gini impurity splitting</div>
                   <div style={{ fontSize:10, color:"#93C5FD" }}>Features: Volume, Time, Weather</div>
                   <div style={{ marginTop:12, background:T.teal+"33", border:`1px solid ${T.teal}`, borderRadius:6, padding:"6px 10px" }}>
-                    <div style={{ fontSize:10, color:T.teal, fontWeight:700 }}>Model Accuracy: Approx. 92–Approx. 92–Approx. 92–94%</div>
+                    <div style={{ fontSize:10, color:T.teal, fontWeight:700 }}>Model Accuracy: Approx 92–94%</div>
                     <div style={{ fontSize:9, color:"#94D5CF" }}>on Metro Interstate Dataset</div>
                   </div>
                 </div>
@@ -626,7 +626,7 @@ export default function App() {
                     ["Objective", "Predict urban traffic congestion levels using machine learning and implement adaptive signal control"],
                     ["ML Model", "Random Forest Classifier"],
                     ["Dataset", "Metro Interstate Traffic Volume (UCI Repository)"],
-                    ["Model Accuracy", "Approx. 92–Approx. 92–Approx. 92–94%"],
+                    ["Model Accuracy", "Approx 92–94%"],
                     ["Features Used", "Traffic volume, hour of day, weather, temperature, holiday indicator"],
                     ["Target Variable", "Congestion level (Low / Moderate / High / Critical)"],
                     ["Signal Logic", "Adaptive Smart Control — timing adjusted per predicted congestion class"],
@@ -648,7 +648,7 @@ export default function App() {
                   <SectionHeader title="Model Performance Metrics" />
                   <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
                     {[
-                      ["Accuracy", "Approx. 92–Approx. 92–94%", T.blue, T.lightBlue],
+                      ["Accuracy", "Approx 92–94%", T.blue, T.lightBlue],
                       ["Precision", "92%", T.teal, T.lightTeal],
                       ["Recall", "91%", T.orange, T.lightOrange],
                       ["F1 Score", "91.5%", T.navy, T.bg],
@@ -692,7 +692,7 @@ export default function App() {
                   { step:"01", title:"Data Collection", desc:"Metro Interstate Traffic Volume dataset from UCI ML Repository. 48,000+ hourly records.", icon:"📦" },
                   { step:"02", title:"Preprocessing", desc:"Feature engineering: congestion labels, one-hot encoding for weather, cyclical time features.", icon:"⚙️" },
                   { step:"03", title:"Model Training", desc:"Random Forest with 150 estimators, Gini splitting, 80/20 train-test split, cross-validation.", icon:"🌲" },
-                  { step:"04", title:"Evaluation", desc:"Approx. 92–Approx. 92–94% accuracy on held-out test set. Confusion matrix, precision-recall analysis.", icon:"📊" },
+                  { step:"04", title:"Evaluation", desc:"Approx. 92–94% accuracy on held-out test set. Confusion matrix, precision-recall analysis.", icon:"📊" },
                   { step:"05", title:"Signal Control", desc:"Predicted congestion class maps to adaptive green/red durations. Dashboard visualization.", icon:"STM" },
                 ].map((s,i)=>(
                   <div key={s.step} style={{ background:T.bg, padding:"16px 14px", textAlign:"center", borderRight: i<4?`1px solid ${T.border}`:"none" }}>
@@ -731,7 +731,7 @@ export default function App() {
       {/* FOOTER */}
       <div style={{ background:T.card, borderTop:`1px solid ${T.border}`, padding:"10px 28px", display:"flex", justifyContent:"space-between", alignItems:"center", marginTop:20 }}>
         <span style={{ fontSize:11, color:T.gray }}>Smart Traffic Monitoring & Congestion Prediction System · Academic Project Simulation</span>
-        <span style={{ fontSize:11, color:T.gray }}>Model: Random Forest · Dataset: Metro Interstate Traffic Volume (UCI) · Accuracy: Approx. 92–Approx. 92–94%</span>
+        <span style={{ fontSize:11, color:T.gray }}>Model: Random Forest · Dataset: Metro Interstate Traffic Volume (UCI) · Accuracy: Approx. 92–94%</span>
       </div>
     </div>
   );
